@@ -6,11 +6,16 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "lint": "eslint .",
-    "test": "vitest"
+    "test": "vitest",
+    "prisma:init": "prisma init",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
   },
   "dependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@prisma/client": "6.15.0",
     "@repo/shared": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "bcrypt": "^6.0.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
@@ -28,6 +33,7 @@
     "@types/node": "^25.8.0",
     "@types/supertest": "^7.2.0",
     "eslint": "^10.3.0",
+    "prisma": "6.15.0",
     "supertest": "^7.2.2",
     "tsx": "^4.22.0",
     "typescript": "^6.0.3",
